@@ -1,0 +1,22 @@
+{
+  "name": "vscode-react-redux-snippets",
+  "displayName": "vscode-react-redux-snippets",
+  "description": "Code snippets for React.js/Redux",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.45.0"
+  },
+  "publisher": "beforeload",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [{
+      "language": "javascript",
+      "path": "./snippets/snippets.code-snippets"
+    }, {
+      "language": "jsx",
+      "path": "./snippets/snippets.code-snippets"
+    }]
+  }
+}

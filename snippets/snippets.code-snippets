@@ -1,0 +1,121 @@
+{
+  "Import React": {
+    "prefix": "ir",
+    "body": ["import React from 'react';"],
+    "description": "import React"
+  },
+  "React Component": {
+    "prefix": "rc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "",
+      "class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$0",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "React Component"
+  },
+  "React Function Component": {
+    "prefix": "rf",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = ({ $2 }) => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "React Function Component"
+  },
+  "React PureComponent": {
+    "prefix": "rp",
+    "body": [
+      "import React, { PureComponent } from 'react';",
+      "",
+      "class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$0",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "React PureComponent"
+  },
+  "React Component width Redux mapStateToProps": {
+    "prefix": "rm",
+    "body": [
+      "import React, { Component } from 'react';",
+      "import { connect } from 'react-redux';",
+      "",
+      "class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$0",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "const mapStateToProps = state => ({",
+      "\t$3: state.$3,",
+      "});",
+      "",
+      "export default connect(mapStateToProps)(${1:${TM_FILENAME_BASE}});"
+    ],
+    "description": "React Component width Redux mapStateToProps"
+  },
+  "Import React Component width Redux": {
+    "prefix": "rd",
+    "body": [
+      "import React, { Component } from 'react';",
+      "import { connect } from 'react-redux';",
+      "",
+      "class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$0",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "const mapStateToProps = state => ({",
+      "\t$3: state.$3,",
+      "});",
+      "",
+      "const mapDispatchToProps = dispatch => ({",
+      "\t$4: ($5) => dispatch($4($5)),",
+      "});",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME_BASE}});"
+    ],
+    "description": "React Component width Redux"
+  },
+  "Import PropTypes": {
+    "prefix": "pt",
+    "body": [
+      "import PropTypes from 'prop-types';"
+    ],
+    "description": "Import PropTypes"
+  }
+}
