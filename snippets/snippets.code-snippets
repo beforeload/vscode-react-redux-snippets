@@ -83,7 +83,7 @@
     ],
     "description": "React Component width Redux mapStateToProps"
   },
-  "Import React Component width Redux": {
+  "React Component width Redux": {
     "prefix": "rd",
     "body": [
       "import React, { Component } from 'react';",
@@ -117,5 +117,17 @@
       "import PropTypes from 'prop-types';"
     ],
     "description": "Import PropTypes"
+  },
+  "Constructor": {
+    "prefix": "cs",
+    "body": [
+      "constructor(props) {",
+      "\tsuper(props);",
+      "\tthis.state = {",
+      "\t\t$1",
+      "\t}",
+      "}"
+    ],
+    "description": "React Component Constructor"
   }
 }
